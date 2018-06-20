@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif');
+
+#section1 {
+	text-align: center;
+		}
+
+		h1, h2, h4 {
+			font-family: 'Bree Serif';
+		}
+
+		p, span,{
+			font-size: 14px;
+			font-family: 'Lato';
+		}
+
+		em {
+			font-family: 'Lato';
+			color: #777;
+			font-size: 16px;
+		}
+
+		header {
+			background-color: #ffcc00;
+			padding: 154px 0px;
+
+		}
+
+		.seccion {
+
+			padding: 100px 30px;
+		}
+
+		.bg-grey {
+			background-color: #f6f6f6;
+		}
+
+		.logo {
+			margin-bottom: 10px;
+		}
+
+		.navbar {
+			background-color: #ffcc00;
+			border-radius: 0;
+			border: 0;
+			font-size: 16px;
+			line-height: 1.42857143;
+    		letter-spacing: 4px;
+    		color: #000;
+    		font-family: Montserrat;
+		}
+
+		.navbar-default .navbar-toggle {
+			border: none;
+			color: #fff;
+
+		}
+		.navbar-default .navbar-toggle .navbar-toggle:hover {
+			background-color: black;
+		}
+
+		.navbar-collapse {
+			border: none;
+		}
+
+		.navbar li a, .navbar {
+    		color: #000 !important;
+		}
+
+		.navbar li a {
+			margin-right:10px;
+		}
+
+		.navbar-nav li a:hover, .navbar-nav li.active a {
+   			 color: #fff !important;
+		}
+
+		footer {
+			background-color:#2f2f2f;
+			color:#fff;
+			height: 100%;
+
+			padding: 60px 0px;
+		}
+		footer .glyphicon {
+    		font-size: 20px;
+    		margin-bottom: 20px;
+    		color: #ffcc00;
+		}
+
+		footer .glyphicon:hover {
+			color:#fff;
+		}
+
+		header .glyphicon {
+			margin-top: 20px;
+			font-size:30px;
+			color: #000;
+		}
+
+		header .glyphicon:hover {
+			color: #fff;
+		}
+
+		.typewritter h1 {
+			margin-top: 10px;
+			color: #000;
+			overflow: hidden;
+			white-space: nowrap;
+			margin: 0 auto;
+			letter-spacing: .15em;
+			animation:     
+				typing 6.0s steps(30, end),
+   				blink-caret .75s step-end infinite;
+		}
+
+		@keyframes typing {
+  			from { width: 0 }
+  			to { width: 100% }
+		}
+
+/* The typewriter cursor effect */
+		@keyframes blink-caret {
+			 from, to { border-color: transparent }
+  			50% { border-color: black }
+		}	
+
+		.progress-bar {
+			background-color:#ffcc00;
+			color: #000;
+		}
+
+		@media only screen and (max-width: 600px) {
+			footer {
+				overflow: hidden;
+			}
+
+			.typewritter {
+				font-size: 11px;
+			}
+		}
+
+		input[type=text] {
+			width: 100%;
+			padding: 20px 0px;
+			border: 0px;
+			border-bottom: 5px solid #ffcc00;
+			color: #000;
+		}
+
+		input[type=text].error {
+			border-bottom: 5px solid red;
+			color: red;
+		}
+
+		.flashnone {
+			color: #000;
+			background-color: #ffcc00;
+			padding: 15px;
+			border-radius: 5px;
+			display: block;
+			width: calc(100% - 100px);
+			margin-bottom: 20px;
+		}
+
+			.flashms {
+			color: #000;
+			background-color: #ffcc00;
+			padding: 15px;
+			border-radius: 5px;
+			display: block;
+			width: calc(100% - 100px);
+			margin-bottom: 20px;
+		}
+
+		textarea {
+			width: 100%;
+			margin-bottom: 5px;
+			border-radius: 5px;
+			padding: 12px 20px;
+			border: 2px solid #ccc;
+			background-color: #f8f8f8;
+			resize: none;
+		}
+
+		.btn {
+			padding: 15px 20px;
+			background-color: #ffcc00;
+			border: 2px #ffcc00;
+			margin-bottom: 20px;
+		}
+
+		.btn:hover {
+
+		}
+
+		.glyphicon-map-marker, .glyphicon-phone, .glyphicon-envelope {
+			font-size:35px;
+			margin-right: 5px;
+		}
+
+		.info-text {
+			font-size:20px;
+		}
+
+		.social a {
+			color: #fff;
+			font-size: 30px;
+			text-decoration: none;
+			margin-bottom: 10px;
+		}
+
+		.prev {
+			transition: transform .5s
+		}
+
+		.prev:hover {
+			transform: scale(1.1);
+		}
+
+		.prevtext {
+			margin-top: 15px;
+			background-color: #ffcc00;
+			padding: 10px 20px;
+			border-radius: 5px;
+			visibility: hidden;
+		}
+		.slide {
+		    /* The name of the animation */
+		    animation-name: slide;
+		    -webkit-animation-name: slide;
+		    /* The duration of the animation */
+		    animation-duration: 1s;
+		    -webkit-animation-duration: 1s;
+		    /* Make the element visible */
+		    visibility: visible;
+		}
+		
+		/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+		@keyframes slide {
+		    0% {
+		        opacity: 0;
+		        transform: translateY(70%);
+		    }
+		    100% {
+		        opacity: 1;
+		        transform: translateY(0%);
+		    }
+		}
+		@-webkit-keyframes slide {
+		    0% {
+		        opacity: 0;
+		        -webkit-transform: translateY(70%);
+		    }
+		    100% {
+		        opacity: 1;
+		        -webkit-transform: translateY(0%);
+		    }
+		}
+		
+		

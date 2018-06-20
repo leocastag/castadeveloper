@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Casta Developer</title>
+	<link rel="shortcut icon"  href="img/logo.png"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/sty.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+      			</button>
+			</div>
+
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#home" class="js-trigger">HOME</a></li>
+        			<li><a href="#about" class="js-trigger">ABOUT</a></li>
+        			<li><a href="#portfolio" class="js-trigger">MY WORK</a></li>
+        			<li><a href="#contact" class="js-trigger">HIRE ME</a></li>
+      			</ul>
+      		</div>
+      	</div>		
+	</nav>
+
+	<header id="home">
+		<div class="container-fluid text-center">
+			<img src="img/logo.png" class="logo">
+			<div class="typewritter">
+				<h1>Simple is better</h1>
+			</div>
+			<a href="#about" title="Start">
+    			<span class="glyphicon glyphicon-chevron-down"></span>
+  			</a>
+		</div>
+	</header>
+
+	<section class="seccion" id="about">
+		<h1 class="text-center">About Me</h1>
+		<p class="text-center"><em>Having an awesome design is cool and all but, having clean & efficient code is even cooler!</em></p>
+		<div class="container-fluid">
+			<div class="row">
+					
+				<div class="col-xs-6">
+
+					<h2 class="text-center"> Who am I ?</h2>
+
+					<p>I am a talented and experienced designer and developer. I have been working with HTML5/CSS3, Bootstrap, Javascript, Jquery and Wordpress. I am a hard worker and I enjoy working under pressure environment . If I'm hired by you, I will be responsible to complete any task on time. Outsource me for your project and I promise to give you the best of me.
+					Whether you're paying me $100 or $1000, I can promise my work will be clean, organized, and beautiful. I use all of the latest frameworks and libraries to efficiently manage your project and push them to their full potential.</p>
+						
+				</div>
+
+				<div class="col-xs-6">
+					<h2 class="text-center"> My Skills</h2>
+					<span>Web Design</span>
+					<div class="progress">
+  						<div class="progress-bar" role="progressbar" aria-valuenow="70"
+  						aria-valuemin="0" aria-valuemax="100" style="width:95%;">
+    					95%
+ 						</div>
+					</div>
+					<span>Web Development</span> 
+					<div class="progress">
+
+  						<div class="progress-bar" role="progressbar" aria-valuenow="70"
+  						aria-valuemin="0" aria-valuemax="100" style="width:90%;">
+    					90%
+ 						</div>
+
+					</div> 
+					<span>Wordpress Development</span>
+					<div class="progress">
+  						<div class="progress-bar" role="progressbar" aria-valuenow="70"
+  						aria-valuemin="0" aria-valuemax="100" style="width:80%;">
+    					80%
+ 						</div>
+					</div> 
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="seccion bg-grey" id="portfolio">
+		<div class="container-fluid  text-center"> 
+
+  			<h2>Some of my Work</h2><br>
+  			<div class="row">
+    			<div class="col-xs-6">
+      				<h4 class="text-center">Pack-N-Ship</h4>
+      				<a href="http://packshipcenter.com" target="_blank"><img src="img/pack.jpg" class="img-responsive prev" id="prev" style="width:100%" alt="Website designed for a Pack-N-Ship Maling Center"></a>
+      				<p class="prevtext" id="prevtext"> One page web site builded in HTML, CSS, Bootstrap, Jquery</p>
+    			</div>
+
+    			<div class="col-xs-6"> 
+      				<h4 class="text-center">Find your movie!</h4>
+      				<a href="" target="_blank"><img src="img/findmovie.jpg" class="img-responsive prev" id="prev" style="width:100%" alt="Wordpress Theme designed for a Rugby NewsWeek site"></a>
+      				<p class="prevtext" id="prevtext">One page web site builded in HTML, CSS, Bootstrap, Jquery</p>
+    			</div>
+
+  			</div>
+			</div>
+	</section>
+
+	<section class="seccion" id="contact">
+		<div class="container-fluid">
+		<h2 class="text-center">Hire Me!</h2>
+			<div class="row">
+				<div class="col-sm-5">
+					<p class="info-text"><span class="glyphicon glyphicon-map-marker"></span>Miami, FL</p>
+					<p class="info-text"><span class="glyphicon glyphicon-phone"></span>(407) 751-4548</p>
+					<p class="info-text"><span class="glyphicon glyphicon-envelope"></span>info@packshipcenter.com </p>
+				</div>
+				<div class="col-sm-7">
+					<div id="flashms" class="flashnone">
+						<p>Message successfully submitted. Thank you, I will get back to you ASAP!</p>
+					</div>
+					<form id="form" action="mail.php" method="POST">
+						
+						<div class="row">
+							<div class="col-sm-6">
+								<input type="text" id="name" name="name" placeholder="Your name..">
+							</div>
+						<div class="col-sm-6">
+							<input type="text" id="mail" name="email" placeholder="yourmail@email.com">
+						</div>
+						</div><br>
+						<textarea rows="5" id="comments" id="comments" name="comments" placeholder="Comment"></textarea><br>
+
+						<div class="row">
+							<div class="col-sm-12">
+          						<button class="btn btn-default pull-right" type="submit reset" id="btn">Send</button>
+       						</div>
+						</div>
+					</form>
+				</div>
+			</div>
+
+		</div>
+
+	</section>
+
+	<footer class="container-fluid text-center">
+		<a href="#home" title="To Top">
+    		<span class="glyphicon glyphicon-chevron-up"></span>
+  		</a>
+  		<div class="social text-center">
+  			<a href="" class="fa fa-instagram"></a>
+  			<a href="https://github.com/leocastag" target="_blank" class="fa fa-github"></a>
+  		</div>
+		<p>© Casta Developer 2018</p>
+	</footer>
+		
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>	
+	<script type="text/javascript" src="js/main.js"></script>	
+</body>
+</html>
